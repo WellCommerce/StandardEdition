@@ -1,0 +1,83 @@
+{
+  "name": "wellcommerce/standard-edition",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "description": "WellCommerce Standard Edition",
+  "keywords": [
+    "symfony",
+    "e-commerce",
+    "open-source"
+  ],
+  "authors": [
+    {
+      "name": "Adam Piotrowski",
+      "email": "adam@wellcommerce.org"
+    },
+    {
+      "name": "WellCommerce Developers",
+      "email": "developers@wellcommerce.org"
+    }
+  ],
+  "support": {
+    "email": "support@wellcommerce.org",
+    "issues": "https://github.com/WellCommerce/WellCommerce/issues",
+    "source": "https://github.com/WellCommerce/WellCommerce/"
+  },
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    },
+    "files": [
+      "app/AppKernel.php"
+    ]
+  },
+  "require": {
+    "php": "^7.0",
+    "ext-mbstring": "*",
+    "ext-gd": "*",
+    "ext-intl": "*",
+    "ext-exif": "*",
+    "wellcommerce/composer-plugin": "^1.0@dev",
+    "wellcommerce/wellcommerce": "^0.7@dev"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::removeSymfonyStandardFiles",
+      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget"
+    ],
+    "post-update-cmd": [
+      "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget",
+      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets"
+    ],
+    "build-bootstrap": [
+      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap"
+    ]
+  },
+  "config": {
+    "bin-dir": "bin",
+    "secure-http": false
+  },
+  "extra": {
+    "symfony-app-dir": "app",
+    "symfony-web-dir": "web",
+    "symfony-assets-install": "relative",
+    "incenteev-parameters": {
+      "file": "app/config/parameters.yml",
+      "env-map": {
+        "database_name": "SYMFONY_DATABASE_NAME",
+        "database_user": "SYMFONY_DATABASE_USER",
+        "database_host": "SYMFONY_DATABASE_HOST",
+        "database_password": "SYMFONY_DATABASE_PASSWORD",
+        "prod_log_path": "SYMFONY_PROD_LOG_PATH"
+      }
+    },
+    "branch-alias": {
+      "dev-master": "0.7.x-dev"
+    }
+  }
+}

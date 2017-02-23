@@ -1,0 +1,2 @@
+imports:
+    - { resource: "@WellCommerceAppBundle/Resources/config/config.yml" }
