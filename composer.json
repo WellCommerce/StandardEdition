@@ -34,7 +34,6 @@
   },
   "require": {
     "php": "^7.0",
-    "ext-mbstring": "*",
     "ext-gd": "*",
     "ext-intl": "*",
     "ext-exif": "*",
@@ -49,7 +48,6 @@
     "wellcommerce/oauth-bundle": "dev-master",
     "wellcommerce/order-bundle": "dev-master",
     "wellcommerce/review-bundle": "dev-master",
-    "wellcommerce/routing-bundle": "dev-master",
     "wellcommerce/search-bundle": "dev-master",
     "wellcommerce/showcase-bundle": "dev-master",
     "wellcommerce/wishlist-bundle": "dev-master",
