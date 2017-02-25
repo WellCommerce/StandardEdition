@@ -6,10 +6,6 @@ php:
   - 7.0
   - 7.1
 
-env:
-  - CONTRIBUTOR=1
-  - CONTRIBUTOR=0
-
 services:
   - elasticsearch
 
@@ -40,7 +36,6 @@ before_script:
     - wget http://get.sensiolabs.org/security-checker.phar
 
 script:
-    - phpunit -c phpunit.xml.dist
     - php security-checker.phar security:check composer.lock
 
 notifications:
