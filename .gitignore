@@ -8,7 +8,9 @@ app/logs/*
 app/sessions/*
 app/sql/*
 app/lucene/*
-/bin/
-/vendor/
+bin/
+vendor/
 *node_modules
 *.sh
+web/bundles/*
+web/themes/wellcommerce-default-theme/*
