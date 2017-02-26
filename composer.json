@@ -38,20 +38,7 @@
     "ext-intl": "*",
     "ext-exif": "*",
     "wellcommerce/composer-plugin": "^1.0@dev",
-    "wellcommerce/api-bundle": "dev-master",
-    "wellcommerce/app-bundle": "dev-master",
-    "wellcommerce/catalog-bundle": "dev-master",
-    "wellcommerce/cms-bundle": "dev-master",
-    "wellcommerce/core-bundle": "dev-master",
-    "wellcommerce/coupon-bundle": "dev-master",
-    "wellcommerce/generator-bundle": "dev-master",
-    "wellcommerce/oauth-bundle": "dev-master",
-    "wellcommerce/order-bundle": "dev-master",
-    "wellcommerce/review-bundle": "dev-master",
-    "wellcommerce/search-bundle": "dev-master",
-    "wellcommerce/showcase-bundle": "dev-master",
-    "wellcommerce/wishlist-bundle": "dev-master",
-    "wellcommerce/wellcommerce-default-theme": "dev-master"
+    "wellcommerce/standard-edition-bundle": "dev-master"
   },
   "scripts": {
     "post-install-cmd": [
