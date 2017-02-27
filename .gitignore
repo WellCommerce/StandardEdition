@@ -12,5 +12,5 @@ bin/
 vendor/
 *node_modules
 *.sh
-web/bundles/*
-web/themes/wellcommerce-default-theme/*
+web/bundles/
+web/themes/wellcommerce-default-theme/
