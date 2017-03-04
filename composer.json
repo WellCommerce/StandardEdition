@@ -58,7 +58,7 @@
       "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap"
     ],
     "post-create-project-cmd": [
-      "WellCommerce\\Bundle\\StandardEditionBundle\\Composer\\ScriptHandler::installWellCommerce"
+      "WellCommerce\\Bundle\\StandardEditionBundle\\Composer\\ScriptHandler::installApplication"
     ]
   },
   "config": {
