@@ -61,6 +61,9 @@
     "build-bootstrap": [
       "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap"
     ],
+    "update-application": [
+      "WellCommerce\\Bundle\\StandardEditionBundle\\Composer\\ScriptHandler::updateApplication"
+    ],
     "post-create-project-cmd": [
       "WellCommerce\\Bundle\\StandardEditionBundle\\Composer\\ScriptHandler::installApplication"
     ]
@@ -82,7 +85,8 @@
         "database_user": "SYMFONY_DATABASE_USER",
         "database_host": "SYMFONY_DATABASE_HOST",
         "database_password": "SYMFONY_DATABASE_PASSWORD",
-        "prod_log_path": "SYMFONY_PROD_LOG_PATH"
+        "prod_log_path": "SYMFONY_PROD_LOG_PATH",
+        "php_bin_path": "PHP_BIN_PATH"
       }
     },
     "branch-alias": {
