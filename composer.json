@@ -39,7 +39,7 @@
     "ext-intl": "*",
     "ext-exif": "*",
     "wellcommerce/composer-plugin": "^1.0@dev",
-    "wellcommerce/standard-edition-bundle": "dev-master"
+    "wellcommerce/standard-edition-bundle": "^0.9@dev"
   },
   "scripts": {
     "post-install-cmd": [
@@ -91,7 +91,7 @@
       }
     },
     "branch-alias": {
-      "dev-master": "0.7.x-dev"
+      "dev-master": "0.9.x-dev"
     }
   }
 }
